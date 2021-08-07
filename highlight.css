@@ -1,0 +1,77 @@
+html {
+    font-size: 62.5%;
+}
+*, ::before,::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #255C99;
+    font-family: 'Roboto Condensed', arial;
+    font-size: 1.6rem;
+}
+
+.container {
+    background: rgba(255, 255, 255, .8);
+    max-width: 90%;
+    width: 60.5rem;
+    margin: 10rem auto;
+    padding: 3rem 7rem;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 9rem rgba(60, 60, 60, .6);
+}
+
+.container__title {
+    color: rgba(0, 0, 0, .7);
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+
+.highlight__search {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 2.2rem;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.highlight__input {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 2.5rem;
+    outline: none;
+    border: none;
+    
+}
+
+.highlight__button {
+    background: #255C99;
+    color: #fff;
+    position: absolute;
+    right: -.1rem;
+    width: 11rem;
+    height: 100%;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:650px){
+    .container {
+        padding: 3rem;
+    }
+}
+
+.highlight__paragraph {
+    color: rgba(0, 0, 0, .7);
+    line-height: 2;
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
